@@ -33,6 +33,7 @@
 </template>
 
 <script>
+import axios from 'axios'
 export default {
   data() {
     return {
@@ -64,8 +65,11 @@ export default {
     }
   },
   methods: {
-    apply() {
+    async apply() {
       // Search movies..
+      const OMDB_API_KEY = '7035c60c'
+      const res = await axios.get(`https://www.omdbapi.com/?apikey=${OMDB_API_KEY}&s=${this.title}&type=${this.type}&y=${this.year}&page=1`)
+      console.log(res)
     }
   }
 }
@@ -92,9 +96,10 @@ export default {
     }
   }
   .btn {
-    width: 20px;
+    width: 120px;
     height: 50px;
     font-weight: 700;
+    flex-shrink: 0;
   }
 }
 </style>
