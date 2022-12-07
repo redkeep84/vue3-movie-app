@@ -38,7 +38,7 @@ export default {
     return {
       title: '',
       type: 'movie',
-      Number: 10,
+      number: 10,
       year: '',
       filters: [
         {
