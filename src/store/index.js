@@ -1,8 +1,8 @@
-import { createstore } from 'vuex'
+import { createStore } from 'vuex'
 import movie from './movie'
 import about from './about'
 
-export default createstore({
+export default createStore({
   modules: {
     movie,
     about
