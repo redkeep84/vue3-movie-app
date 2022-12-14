@@ -27,7 +27,7 @@ export default {
   },
   created() {
     console.log(this.$route)
-    this.$store.dispatch('moive/searchMoieWithId', {
+    this.$store.dispatch('moive/searchMovieWithId', {
       // movie/tt123762
       id: this.$route.params.id
     })
