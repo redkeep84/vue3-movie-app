@@ -32,8 +32,8 @@ export default {
           href: '/'
         },
         {
-          name: 'Moive',
-          href: '/Movie/tt4520988'
+          name: 'Movie',
+          href: '/movie/tt4520988'
         },
         {
           name: 'About',
